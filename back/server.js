@@ -31,19 +31,6 @@ express.use(cors({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // There's our listener on port 5000
 express.listen(port, err => {
     if(err){
@@ -53,8 +40,3 @@ express.listen(port, err => {
         console.log(`https://localhost:${port}`)
     }
 })
-
-
-
-
-
