@@ -31,12 +31,15 @@ express.use(cors({
 
 
 
+express.use('/monster', require('./routes/monster'))
+
+
 // There's our listener on port 5000
 express.listen(port, err => {
     if(err){
         throw new Error('It failed to load.')
     }
     else{
-        console.log(`https://localhost:${port}`)
+        console.log(`http://localhost:${port}`)
     }
 })
