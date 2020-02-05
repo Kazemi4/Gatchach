@@ -15,6 +15,6 @@ router.get("/", (req, res) => {
 })
 
 
-router.get("")
+router.get("banner/:id/monster")
 
 module.exports = router
