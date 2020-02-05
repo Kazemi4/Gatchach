@@ -1,7 +1,6 @@
 const router = require('express').Router()
 const connection = require("../config")
 
-
 router.get("/", (req, res) => {
     connection.query("SELECT * FROM user", (err, results) => {
         if (err) {

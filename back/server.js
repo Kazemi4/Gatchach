@@ -32,6 +32,8 @@ express.use(cors({
 
 
 express.use('/monster', require('./routes/monster'))
+express.use('/banner', require('./routes/banner'))
+express.use('/user', require('./routes/user'))
 
 
 // There's our listener on port 5000
